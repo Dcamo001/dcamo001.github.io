@@ -1,0 +1,138 @@
+html {
+  font-size: 12px;
+  font-family: 'Lato','Gotham SSm A','Gotham SSm B','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #transparent!important;
+  letter-spacing: 1.2px;
+  top:100px;
+  right:11px;
+  height:22px;
+  width:100px;
+  font-size:11px;
+  line-height:22px;
+  font-weight:700;
+  letter-spacing:normal;
+  text-align:left;
+  padding: 45px;
+}
+
+{content:"!";
+}
+
+body {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #white;
+  padding: 0px 20px 20px 20px;
+}
+
+
+
+/* trying to create a horizontal top nav bar to match the one on fernandbee.com */
+
+.topnav {
+  font-size: 13px;
+  justify-content: space-between!important;
+  text-align: center;
+  font-weight: 300;
+  color: lightgray;
+  width: 1050px;
+  letter-spacing: 1.15px;
+  line-height: .9;
+  margin: 45px 100px -15px 0px;
+  transform: scale(1, 1.05);
+}
+
+div {
+  font-size: 13px;
+  text-align: justify;
+  font-weight: 300;
+  color: lightgray;
+  justify-content: space-between;
+  letter-spacing: 1.15px;
+  line-height: .9;
+  margin-bottom: -15px;
+  padding-bottom: -10px;
+  transform: scale(1, 1.05);
+}
+
+
+
+
+h1 {
+  font-family: Lato;
+  font-size: 35px;
+  text-align: left;
+  font-weight:400;
+  color:gray;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 12px 0;
+  letter-spacing: 0.0555556em;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: left;
+  font-weight:500;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 12px;
+  text-align: left;
+  font-weight:1000;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h4 {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 400;
+  color: gray;
+  letter-spacing: 1.15px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h5 {
+  font-size: 11px;
+  text-align: left;
+  font-weight: 400;
+  color: gray;
+  letter-spacing: 1.15px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
+}
+
+a {
+text-decoration: none;
+}
+a:link {
+color: Black;
+}
+a:visited {
+color: Black;
+}
+a:hover {
+color: Black;
+}
+
+p, li {
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 1.5px;
+  font-weight:200;
+}
+
+img {
+  display: block;
+  margin: left auto;
+}
