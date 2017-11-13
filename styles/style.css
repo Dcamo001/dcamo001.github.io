@@ -42,14 +42,15 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: gray;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 30px 0px 0px;
+  margin: 0px 30px -10px 0px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  color: #111;
 }
 
 /* Nav Bar */
