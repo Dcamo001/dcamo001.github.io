@@ -1,6 +1,6 @@
 html {
   font-size: 12px;
-  font-family: 'Lato','Gotham SSm A','Gotham SSm B','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   background-color: #transparent!important;
   letter-spacing: 1.2px;
   top:100px;
@@ -26,27 +26,40 @@ body {
 }
 
 
+/* Nav Bar */
 
-/* trying to create a horizontal top nav bar to match the one on fernandbee.com */
-
-.topnav {
-  font-size: 13px;
-  justify-content: space-between!important;
-  text-align: center;
-  font-weight: 300;
-  color: lightgray;
-  width: 1050px;
-  letter-spacing: 1.15px;
-  line-height: .9;
-  margin: 45px 100px -15px 0px;
-  transform: scale(1, 1.05);
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Nav Bar */
+
 
 div {
   font-size: 13px;
   text-align: justify;
   font-weight: 300;
-  color: lightgray;
+  color: gray;
   justify-content: space-between;
   letter-spacing: 1.15px;
   line-height: .9;
@@ -54,8 +67,6 @@ div {
   padding-bottom: -10px;
   transform: scale(1, 1.05);
 }
-
-
 
 
 h1 {
@@ -110,19 +121,6 @@ h5 {
   line-height: 1;
   margin: 0;
   padding: 10px 0;
-}
-
-a {
-text-decoration: none;
-}
-a:link {
-color: Black;
-}
-a:visited {
-color: Black;
-}
-a:hover {
-color: Black;
 }
 
 p, li {
