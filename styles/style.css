@@ -13,10 +13,10 @@ html {
   letter-spacing:normal;
   text-align:left;
   padding: 45px;
+  box-sizing: border-box;
 }
 
-{content:"!";
-}
+
 
 body {
   width: 1100px;
@@ -26,7 +26,7 @@ body {
 }
 
 
-/* Nav Bar */
+/* Nav 
 
 ul {
   list-style-type: none;
@@ -52,7 +52,7 @@ li a:hover {
   color: #111;
 }
 
-/* Nav Bar */
+Bar */
 
 
 div {
@@ -138,39 +138,70 @@ img {
 
 /* ------------------------- Custom classes -------------------------*/
 
-.main-title {
-  color:black!important;
+.navbar {
+  display:flex;
   text-decoration: none;
+  width: 832px;
+  height: 40px;
+  background: lightgray;
 }
+
+
+.main-title {
+  display:flex;
+  text-decoration: none;  
+  color:black!important;
+  margin: 6px 0px -16px -40px;
+  padding: 0px 24px 0px 0px;
+}
+
+.navbar-items {
+  display:flex;
+  text-decoration: none;
+  margin: 6px 12px -16px 24px;
+}
+
+/* 
 
 .flex-container {
   display: flex;
   background-color: gray;
+  flex-direction:row;  
   justify-content: space-between;  
+  height: 40px;
+  width: 100%;
+  margin: 0px 0px -12px 0px;
+  
 }
 
 .flex-container>div {
   background-color: lightgray;
-  flex-direction:row;
-  height: 50px;
-  width: 850px;
-  margin: 10px;
-  padding: 20px;
+  height: 32px;  
   font-size: 13px;
+  
 }
 
 .flex-container> div.navbar {
   background-color: lightgray;
   height: 30px;
-  width: 800px;
-  margin: ;
-  padding: 20px;
+  width: 440px;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: left;  
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
   font-size: 13px;
 }
 
 .flex-container> div.title {
   background-color: lightgray;
-  height: 30px;
-  width: 800px;
+  height: 28px;
+  justify-content: flex-start;
+  align-items: left;
   font-size: 30px;
-}
+  margin: 0px;
+  padding: 0px 0px 0px 0px 12px;
+  font-size: 13px;
+} 
+
+*/
