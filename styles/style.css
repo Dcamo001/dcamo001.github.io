@@ -1,207 +1,143 @@
 html {
-  font-size: 12px;
-  font-family: 'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-  background-color: #transparent!important;
-  letter-spacing: 1.2px;
-  top:100px;
-  right:11px;
-  height:22px;
-  width:100px;
-  font-size:11px;
-  line-height:22px;
-  font-weight:700;
-  letter-spacing:normal;
-  text-align:left;
-  padding: 45px;
-  box-sizing: border-box;
+  font-size:         12px;
+  font-family:       'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color:  transparent!important;
+  letter-spacing:    1.2px;
+  top:               100px;
+  right:             11px;
+  height:            22px;
+  width:             100px;
+  font-size:         11px;
+  line-height:       22px;
+  font-weight:       700;
+  letter-spacing:    normal;
+  text-align:        left;
+  padding:           45px;
+  box-sizing:        border-box;
 }
-
-
 
 body {
-  width: 1100px;
-  margin: 0 auto;
-  background-color: #white;
-  padding: 0px 20px 20px 20px;
-}
-
-
-/* Nav 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color:white;
+  width:             1100px;
+  margin:            0 auto;
+  padding:           0px 20px 20px 20px;
 }
 
-li {
-  float: right;
-  margin: 0px 25px 0px 50px;
-}
+a:active {
+  text-decoration:   none;
+  font-weight:       bold;
+  color:           black!important;
+} 
 
-li a {
-  display: block;
-  color: gray;
-  text-align: center;
-  text-decoration: none;
-}
+a:link {
+  text-decoration:   none;
+  color:           gray;
+} 
 
-li a:hover {
-  color: #111;
-}
-
-Bar */
-
+a:visited {
+  text-decoration:   none;
+  font-weight:       normal;
+  color:           gray;
+} 
 
 div {
-  font-size: 13px;
-  text-align: justify;
-  font-weight: 300;
-  color: gray;
-  justify-content: space-between;
-  letter-spacing: 1.15px;
-  line-height: .9;
-  margin-bottom: -15px;
-  padding-bottom: -10px;
-  transform: scale(1, 1.05);
+  font-size:         13px;
+  text-align:        justify;
+  font-weight:       300;
+  color:           gray;
+  justify-content:   space-between;
+  letter-spacing:    1.15px;
+  line-height:       .9;
+  margin-bottom:     -15px;
+  transform:         scale(1, 1.05);
 }
 
-
 h1 {
-  font-family: Lato;
-  font-size: 35px;
-  text-align: left;
-  font-weight:400;
-  color:gray;
-  letter-spacing: 5px;
-  margin: 0;
-  padding: 12px 0;
-  letter-spacing: 0.0555556em;
+  font-size:         35px;
+  text-align:        left;
+  font-weight:       400;
+  color:           black!important;
+  letter-spacing:    5px;
+  margin:            0;
+  padding:           12px 0;
+  letter-spacing:    0.0555556em;
 }
 
 h2 {
-  font-size: 25px;
-  text-align: left;
-  font-weight:500;
-  letter-spacing: 1.2px;
-  line-height: 1;
-  margin: 0;
-  padding: 10px 0;
+  font-size:         25px;
+  text-align:        left;
+  font-weight:       500;
+  letter-spacing:    1.2px;
+  line-height:       1;
+  margin:            0;
+  padding:           10px 0;
 }
 
 h3 {
-  font-size: 12px;
-  text-align: left;
-  font-weight:1000;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin: 0;
-  padding: 10px 0;
+  font-size:         12px;
+  text-align:        left;
+  font-weight:       1000;
+  letter-spacing:    1px;
+  line-height:       1;
+  margin:            0;
+  padding:           10px 0;
 }
 
 h4 {
-  font-size: 12px;
-  text-align: left;
-  font-weight: 400;
-  color: gray;
-  letter-spacing: 1.15px;
-  line-height: 1;
-  margin: 0;
-  padding: 10px 0;
+  font-size:         12px;
+  text-align:        left;
+  font-weight:       400;
+  color:           gray;
+  letter-spacing:    1.15px;
+  line-height:       1;
+  margin:            0;
+  padding:           10px 0;
 }
 
 h5 {
-  font-size: 11px;
-  text-align: left;
-  font-weight: 400;
-  color: gray;
-  letter-spacing: 1.15px;
-  line-height: 1;
-  margin: 0;
-  padding: 10px 0;
+  font-size:         11px;
+  text-align:        left;
+  font-weight:       400;
+  color:           gray;
+  letter-spacing:    1.15px;
+  line-height:       1;
+  margin:            0;
+  padding:           10px 0;
 }
 
 p, li {
-  font-size: 12px;
-  line-height: 1.75;
-  letter-spacing: 1.5px;
-  font-weight:200;
+  font-size:         12px;
+  line-height:       1.75;
+  letter-spacing:    1.5px;
+  font-weight:       200;
 }
 
 img {
-  display: block;
-  margin: left auto;
+  display:           block;
+  margin:            left auto;
 }
-
 
 /* ------------------------- Custom classes -------------------------*/
 
 .navbar {
-  display:flex;
-  text-decoration: none;
-  width: 832px;
-  height: 40px;
-  background: lightgray;
+  display:           flex;
+  text-decoration:   none;
+  width:             832px;
+  height:            40px;
+  margin:            16px 0px -4px 0px;
 }
 
-
 .main-title {
-  display:flex;
-  text-decoration: none;  
-  color:black!important;
-  margin: 6px 0px -16px -40px;
-  padding: 0px 24px 0px 0px;
+  display:           flex;
+  text-decoration:   none;  
+  color:           black!important;
+  margin:            6px 0px -16px -40px;
+  padding:           0px 24px 0px 0px;
 }
 
 .navbar-items {
-  display:flex;
-  text-decoration: none;
-  margin: 6px 12px -16px 24px;
+  display:           flex;
+  text-decoration:   none;
+  margin:            10px 8px -16px 24px;
+  color:           gray;
 }
-
-/* 
-
-.flex-container {
-  display: flex;
-  background-color: gray;
-  flex-direction:row;  
-  justify-content: space-between;  
-  height: 40px;
-  width: 100%;
-  margin: 0px 0px -12px 0px;
-  
-}
-
-.flex-container>div {
-  background-color: lightgray;
-  height: 32px;  
-  font-size: 13px;
-  
-}
-
-.flex-container> div.navbar {
-  background-color: lightgray;
-  height: 30px;
-  width: 440px;
-  justify-content: flex-start;
-  justify-content: space-between;
-  align-items: left;  
-  margin: 0px;
-  padding: 0px 0px 0px 10px;
-  font-size: 13px;
-}
-
-.flex-container> div.title {
-  background-color: lightgray;
-  height: 28px;
-  justify-content: flex-start;
-  align-items: left;
-  font-size: 30px;
-  margin: 0px;
-  padding: 0px 0px 0px 0px 12px;
-  font-size: 13px;
-} 
-
-*/
