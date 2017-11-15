@@ -109,7 +109,7 @@ p, li {
 .navbar ul, li {
   display:           flex;
   text-decoration:   none;
-  margin:            10px 8px -16px 24px;
+  margin:            16px 8px -16px 24px;
   color:           gray;
 }
 
