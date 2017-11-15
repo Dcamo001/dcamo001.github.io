@@ -8,7 +8,6 @@ html {
 
 body {
   background-color:white;
-  width:             1100px;
 }
 
 a:active {
@@ -88,10 +87,6 @@ p, li {
   font-weight:       200;
 }
 
-img {
-  display:           block;
-  margin:            left auto;
-}
 
 /* ------------------------- Custom classes -------------------------*/
 
@@ -116,4 +111,8 @@ img {
   text-decoration:   none;
   margin:            10px 8px -16px 24px;
   color:           gray;
+}
+
+img {
+  max-width: 920px;
 }
