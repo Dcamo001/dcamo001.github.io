@@ -93,6 +93,7 @@ p, li {
 .navbar {
   display:           flex;
   text-decoration:   none;
+  justify-content:   left;
   width:             832px;
   height:            40px;
   margin:            16px 0 8px 0;
