@@ -2,7 +2,7 @@ html {
   font-family:       'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   background-color:  transparent;
   text-align:        left;
-  margin:            40px 11px 0 40px;
+  margin:            12px 24px 0 24px;
   box-sizing:        border-box;
 }
 
@@ -13,7 +13,7 @@ body {
 a:active {
   text-decoration:   none;
   font-weight:       bold;
-  color:           black!important;
+  color:           black;
 } 
 
 a:link {
@@ -82,12 +82,72 @@ p {
   font-size:         12px;
   line-height:       1.75;
   letter-spacing:    1.5px;
-  font-weight:       200;
+  font-weight:       300;
 }
 
-ul {
-  max-width:         832px;
+
+/* --------------- Pinterest Tiles --------------- */
+
+* {
+  box-sizing:      border-box;
 }
+  
+.tiles {
+  // 	display:       flex;
+  // 	flex-direction:column;
+  // 	flex-wrap:     wrap;
+  // 	height:        100vw;
+  //  margin:        0;
+  //  width:         1200px;
+  // }
+
+.tiles {
+  -webkit-column-gap: 10px;
+  -webkit-column-count:3;
+  width:              100%;
+  margin:             24px 0 0 0;
+}
+  
+.masonryImage {
+  display: inline-block;
+  background: papayawhip;
+  border-radius: 5px;
+  width: 100%;
+  }
+
+  
+/*Media Queries*/
+
+@media only screen and (max-width : 1000px),
+only screen and (max-device-width : 1000px)  {
+  #container {
+    width: 100%;
+  }
+  
+  .tiles {
+    -webkit-column-count: 2;      
+  }
+
+}
+
+@media only screen and (max-width : 600px),
+only screen and (max-device-width : 600px)  {
+  #container {
+    width: 100%;
+  }
+
+  .tiles {
+    -webkit-column-count: 1;      
+  }
+
+}
+  
+/* --------------- Pinterest Tiles --------------- */
+
+
+
+
+
 
 
 /* ------------------------- Custom classes -------------------------*/
@@ -112,6 +172,7 @@ ul {
 
 .navbar ul, li {
   display:           flex;
+  flex-wrap:         wrap;
   text-decoration:   none;
   margin:            24px 16px -16px 24px;
   color:           gray;
@@ -119,8 +180,4 @@ ul {
   line-height:       1.75;
   letter-spacing:    1.5px;
   font-weight:       400;
-}
-
-img {
-  max-width: 920px;
 }
