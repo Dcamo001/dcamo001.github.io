@@ -1,20 +1,18 @@
-var myImage = document.querySelector('img');
+<script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/Hawaii/echeveriaweb.jpg') {
-      myImage.setAttribute ('src','images/Hawaii/IMG_2486web.jpg');
-    }
-    if(mySrc === 'images/Hawaii/IMG_2486web.jpg') {
-      myImage.setAttribute ('src','images/Hawaii/IMG_2441web.jpg');
-    }
-    if(mySrc === 'images/Hawaii/IMG_2441web.jpg') {
-      myImage.setAttribute ('src','images/Hawaii/IMG_2446web.jpg');
-    }
-    if(mySrc === 'images/Hawaii/IMG_2446web.jpg') {
-      myImage.setAttribute ('src','images/Hawaii/IMG_2462web.jpg');
-    }
-    if(mySrc === 'images/Hawaii/IMG_2462web.jpg') {
-      myImage.setAttribute ('src','images/Hawaii/echeveriaweb.jpg');
-    }
-}
+<script type="text/javascript">
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $(".navbar a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("li").addClass("active");
+                //for making parent of submenu active
+               $(this).closest("li").parent().parent().addClass("active");
+            }
+        });
+    });        
+</script>
