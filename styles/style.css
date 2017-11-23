@@ -14,7 +14,6 @@ h1 {
   font-size:         35px;
   text-align:        left;
   font-weight:       400;
-  color:           black;
   letter-spacing:    5px;
   margin:            0;
   padding:           12px 0;
@@ -45,7 +44,6 @@ h4 {
   font-size:         12px;
   text-align:        left;
   font-weight:       400;
-  color:           gray;
   letter-spacing:    1.15px;
   line-height:       1;
   margin:            0;
@@ -56,7 +54,6 @@ h5 {
   font-size:         11px;
   text-align:        left;
   font-weight:       400;
-  color:           gray;
   letter-spacing:    1.15px;
   line-height:       1;
 }
@@ -72,7 +69,7 @@ p {
 /* --------------- Pinterest Tiles --------------- */
 
 * {
-  box-sizing:      border-box;
+  box-sizing:        border-box;
 }
   
 .tiles {
@@ -85,17 +82,17 @@ p {
   // }
   
 .tiles {
-  -webkit-column-gap: 2px;
+  -webkit-column-gap:  2px;
   -webkit-column-count:3;
-  width:              100%;
-  margin:             24px 0 0 0;
+  width:               100%;
+  margin:              24px 0 0 0;
 }
   
 .masonryImage img{
-  display:            inline-block;
-  width:              100%;
-  height:             auto;
-  margin:             auto;
+  display:           inline-block;
+  width:             100%;
+  height:            auto;
+  margin:            auto;
   }
 
   
@@ -137,9 +134,7 @@ p {
 .navbar {
   display:           flex;
   text-decoration:   none;
-  justify-content:   left
-  width:             832px;
-  height:            40px;
+  justify-content:   left;
   margin:            16px 16px -24px 0;
   padding:           0;
 }
@@ -161,7 +156,7 @@ p {
 }
 
 .active {
-  color:           black!important;
+  color:           black;
 }
 
 a {
