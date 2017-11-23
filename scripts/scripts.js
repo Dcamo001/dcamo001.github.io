@@ -1,20 +1,27 @@
 $(function() {
     var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
-    $('.navbaritem a').each(function() {
+    $('.current-item a').each(function() {
         if ($(this).attr('href') == pathname) {
             $(this).addClass('active');
         }
     });
 });
 
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.menu ul').toggleClass('active');
+ 
+        e.preventDefault();
+    });
+});
 
-(function() {
- var nav = document.getElementsByClassName('navbar'),
-     anchor = nav.getElementsByTagName('a'),
-     current = window.location.pathname.split('/')[1];
-     for (var i = 0; i < anchor.length; i++) {
-     if(anchor[i].href == current) {
-         anchor[i].className = "active";
-     }
- }
-})();
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("navbar").classList.toggle("show");
+}
+
+
+var myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
