@@ -244,10 +244,6 @@ navbar -------------------------*/
   font-weight:       400;
 }
 
-.current-item li {
-  color:   black;
-}
-
 #logo {
   display:           flex;
   justify-content:   left;
