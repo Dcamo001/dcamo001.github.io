@@ -2,7 +2,7 @@ html {
   font-family:       'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   background-color:  transparent;
   text-align:        left;
-  margin:            12px 24px 0 24px;
+  margin:            12px 20px 0 20px;
   box-sizing:        border-box;
 }
 
@@ -95,12 +95,14 @@ p {
   margin:            auto;
   }
 
+/* --------------- Pinterest Tiles --------------- */
   
-/*Media Queries*/
+
+/* ---------------  Media Queries  --------------- */
 
 @media (max-width: 1528px) {
   #container {
-    width: 100%;
+    width:           100%;
   }
   
   .tiles {
@@ -111,27 +113,91 @@ p {
 
 @media (max-width: 976px) {
   #container {
-    width: 105%;
-    margin: 0 0 0 -14px;
+    width:           100%;
+    height:          auto;
+    justify-content: center;
   }
 
   .tiles {
-    -webkit-column-count: 1;  
+    -webkit-column-count: 1; 
+    margin:          12px 0 0 0; 
   } 
+
+  .menu {
+    display:         flex;
+    justify-content: center;
+  }
+
+  .menu ul.active {
+    display:         none;
+  }
+
+  .menu ul {
+    width:           100%;
+    position:        absolute;
+    top:             120%;
+    left:            0px;
+    padding:         10px 18px;
+    box-shadow:      0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:   3px;
+    background:    #303030;
+  }
+
+  .menu ul:after {
+    width:           0px;
+    height:          0px;
+    position:        absolute;
+    top:             0%;
+    left:            22px;
+    content:         '';
+    transform:       translate(0%, -100%);
+    border-left:     7px solid transparent;
+    border-right:    7px solid transparent;
+    border-bottom:   7px solid #303030;
+  }
+
+  .menu li {
+    margin:          5px 0 5px 0;
+    float:           none;
+    display:         block;
+  }
+
+  .menu a {
+    display:         block;
+  }
+
+  .toggle-nav {
+    display:         inline-block;
+    padding:         4px 12px 6px 12px;
+    margin:          -116px 0 0 0;
+    position:        center;
+    color:         #777;
+    font-size:       28px;
+  }
+
+  .toggle-nav:hover, .toggle-nav.active {
+    text-decoration: none;
+  }
+
+  #logo {
+    padding:         32px 0 0 0;
+    justify-content: center!important;
+  }
+
+  #logotag {
+    display:         none;
+  }
 
 }
   
-/* --------------- Pinterest Tiles --------------- */
+/* ---------------  Media Queries  --------------- */
 
 
 
 
+/* ------------------------- 
 
-
-
-/* ------------------------- Custom classes -------------------------*/
-
-.navbar {
+#navbar {
   display:           flex;
   text-decoration:   none;
   justify-content:   left;
@@ -139,13 +205,13 @@ p {
   padding:           0;
 }
 
-.navbar h1 {
+#navbar h1 {
   display:           flex;
   justify-content:   left;
   margin:            0 8px 0 0;
 }
 
-.navbar ul, li {
+#navbar ul, li {
   display:           flex;
   flex-wrap:         wrap;
   margin:            24px 16px -16px 24px;
@@ -155,12 +221,47 @@ p {
   font-weight:       400;
 }
 
-.active {
-  color:           black;
-}
-
 a {
   text-decoration:   none;
   color:           gray;
 }
 
+navbar -------------------------*/
+
+
+.toggle-nav {
+  display:           none;
+}
+
+.menu ul, li {
+  display:           flex;
+  flex-wrap:         wrap;
+  margin:            -22px -80px 0 0;
+  padding:           0 0 0 128px;
+  font-size:         12px;
+  line-height:       1.75;
+  letter-spacing:    1.5px;
+  font-weight:       400;
+}
+
+.current-item li {
+  color:   black;
+}
+
+#logo {
+  display:           flex;
+  justify-content:   left;
+  margin:            0 8px 0 0;
+  color:           black;
+  text-decoration:   none!important;
+}
+
+.menu a {
+  color:           gray;
+  text-decoration:   none;
+}
+
+.menu a:hover, .menu .current-item a {
+  text-decoration:   none;
+  color:           black;
+}

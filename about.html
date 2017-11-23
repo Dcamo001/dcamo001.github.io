@@ -6,23 +6,28 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato:900,700,400,300,100' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
     <title>Fern & Bee Photography</title>
   </head>
 
   <body>
       
   <!-- navbar -->
+
+  <h1><a id="logo" href="./index.html"> FERN & BEE </a></h1>
   
-    <ul class="navbar" role="navigation" style="width:100%;height:auto">
-      <h1><a href="./index.html"> FERN & BEE </a></h1>
+  <nav class="menu">
+    <ul id="navbar" class="active">
       <li><a href="./portfolio.html">portfolio</a></li>
       <li><a href="./blog.html">blog</a></li>
-      <li><a href="./about.html">contact/about</a></li>
+      <li><a class="current-item" href="./about.html">contact/about</a></li>
       <li><a href="./prints.html">prints</a></li>
     </ul>
 
-      <h5>SF Bay Area based adventure</h5>  
+    <a class="toggle-nav" href="#">&#9776;</a>
+
+  </nav>
+
+      <h5 id="logotag" >SF Bay Area based adventure</h5>  
 
     <!-- navbar -->
 
@@ -54,6 +59,7 @@
             
 
             <script src="scripts/scripts.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
             
 
 
