@@ -138,14 +138,14 @@ p {
     width:           100%;
     position:        absolute;
     top:             2.1%;
-    background:    #303030;
+    background:    #444444;
   }
 
   .menu ul:after {
+    display:         flex;
     font-size:       12px;
     color:         black;
     display:         block;
-    position:        relative; 
     content:         "<a href="./portfolio.html">portfolio</a>,><a href="./blog.html">blog</a>,><a href="./about.html">about</a>,><a href="./prints.html">prints</a>";
   }
 
@@ -153,20 +153,17 @@ p {
     display:         flex;
     padding:         2px 0 2px 0;
     margin:          0 auto 0 auto;
-    justify-content: center;
   }
 
   .menu a {
     display:         flex;
-    justify-content: center;
   }
 
   .toggle-nav {
     display:         inline-block;
     padding:         0 10px 2px 10px;
     margin:          -12px 0 0 0;
-    position:        center;
-    color:         #777;
+    color:         rgb(143, 143, 143);
     font-size:       28px;
   }
 
@@ -181,6 +178,10 @@ p {
 
   #logotag {
     display:         none;
+  }
+
+  ul#navbar{
+    padding: 0;
   }
 
 }
@@ -230,7 +231,6 @@ navbar -------------------------*/
 
 .menu ul, li {
   display:           flex;
-  flex-wrap:         wrap;
   margin:            -22px -80px 0 0;
   padding:           0 0 0 128px;
   font-size:         12px;
