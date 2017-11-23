@@ -133,43 +133,38 @@ p {
   }
 
   .menu ul {
+    display:         flex;
+    flex-direction:  column;
     width:           100%;
     position:        absolute;
-    top:             120%;
-    left:            0px;
-    padding:         10px 18px;
-    box-shadow:      0px 1px 1px rgba(0,0,0,0.15);
-    border-radius:   3px;
+    top:             2.1%;
     background:    #303030;
   }
 
   .menu ul:after {
-    width:           0px;
-    height:          0px;
-    position:        absolute;
-    top:             0%;
-    left:            22px;
-    content:         '';
-    transform:       translate(0%, -100%);
-    border-left:     7px solid transparent;
-    border-right:    7px solid transparent;
-    border-bottom:   7px solid #303030;
+    font-size:       12px;
+    color:         black;
+    display:         block;
+    position:        relative; 
+    content:         "<a href="./portfolio.html">portfolio</a>,><a href="./blog.html">blog</a>,><a href="./about.html">about</a>,><a href="./prints.html">prints</a>";
   }
 
   .menu li {
-    margin:          5px 0 5px 0;
-    float:           none;
-    display:         block;
+    display:         flex;
+    padding:         2px 0 2px 0;
+    margin:          0 auto 0 auto;
+    justify-content: center;
   }
 
   .menu a {
-    display:         block;
+    display:         flex;
+    justify-content: center;
   }
 
   .toggle-nav {
     display:         inline-block;
-    padding:         4px 12px 6px 12px;
-    margin:          -116px 0 0 0;
+    padding:         0 10px 2px 10px;
+    margin:          -12px 0 0 0;
     position:        center;
     color:         #777;
     font-size:       28px;
@@ -180,7 +175,7 @@ p {
   }
 
   #logo {
-    padding:         32px 0 0 0;
+    padding:         68px 0 0 0;
     justify-content: center!important;
   }
 
