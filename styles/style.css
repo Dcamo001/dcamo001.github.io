@@ -238,3 +238,9 @@ p {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  FEATURES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+img:hover {
+  background: gray;
+  alt:        display;
+}

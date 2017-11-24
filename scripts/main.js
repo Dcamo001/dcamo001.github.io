@@ -1,5 +1,5 @@
 (function JStest() {
-    console.log("hello");
+    console.log("hello!");
 })();
 
 jQuery.noConflict();
@@ -14,7 +14,8 @@ jQuery(document).ready(function() {
 
 
 
-// Not working
+// Not working, supposed to highlight current page
+
 // (function setActive() { // defines function
     // var pathname = (window.location.pathname.match(/[^/]+$/)[0]);
     // $('a.current-item').each(function() {
