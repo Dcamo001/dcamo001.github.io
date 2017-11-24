@@ -1,15 +1,6 @@
-(function setActive() { // defines function
-    var pathname = (window.location.pathname.match(/[^/]+$/)[0]);
-    $('a.current-item').each(function() {
-        console.log("pathname ->", pathname)
-        if ($(this).attr('href') == pathname) {
-            $(this).addClass('active');
-        }
-    })();
-
-setActive(); // calls function
-
-
+(function JStest() {
+    console.log("hello");
+})();
 
 jQuery.noConflict();
 jQuery(document).ready(function() {
@@ -21,6 +12,16 @@ jQuery(document).ready(function() {
     });
 });
 
-(function JStest() {
-    console.log("hello");
-})();
+
+
+// Not working
+// (function setActive() { // defines function
+    // var pathname = (window.location.pathname.match(/[^/]+$/)[0]);
+    // $('a.current-item').each(function() {
+        // console.log("pathname ->", pathname)
+        // if ($(this).attr('href') == pathname) {
+            // $(this).addClass('active');
+        // }
+    // })();
+
+// setActive(); // calls function
