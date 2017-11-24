@@ -1,12 +1,11 @@
-function setActive() { // defines function
+(function setActive() { // defines function
     var pathname = (window.location.pathname.match(/[^/]+$/)[0]);
-    $('.current-item a').each(function() {
+    $('a.current-item').each(function() {
         console.log("pathname ->", pathname)
         if ($(this).attr('href') == pathname) {
             $(this).addClass('active');
         }
-    });
-}
+    })();
 
 setActive(); // calls function
 
@@ -22,6 +21,6 @@ jQuery(document).ready(function() {
     });
 });
 
-
-console.log("hello")
-
+(function JStest() {
+    console.log("hello");
+})();
