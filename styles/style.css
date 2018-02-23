@@ -29,9 +29,9 @@ h2 {
 }
 
 h3 {
-  font-size:         12px;
-  font-weight:       400;
-  letter-spacing:    1px;
+  font-size:         18px;
+  font-weight:       300;
+  letter-spacing:    1.2px;
   line-height:       1;
   margin:            0;
   padding:           10px 0;
@@ -99,6 +99,14 @@ p {
   margin:            auto;
   }
 
+.homepage img{
+  padding:          12px;
+  }
+
+  /* STARTING POINT */
+/* STARTING POINT */
+/* STARTING POINT */
+
 /* --------------- Pinterest Tiles --------------- */
   
 
@@ -121,6 +129,10 @@ p {
     width:           100%;
     height:          auto;
     justify-content: center;
+  }
+
+  h3 {
+    font-size: 12px;
   }
 
   .tiles {
