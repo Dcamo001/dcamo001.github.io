@@ -60,9 +60,9 @@ p {
   font-weight:       300;
 }
 
-.homepage table { 
+table { 
   table-layout:      fixed; 
-  width:             80%;
+  width:             100%;
 }
 
 
