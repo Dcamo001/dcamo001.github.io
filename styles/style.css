@@ -60,10 +60,10 @@ p {
   font-weight:       300;
 }
 
-
-
-
-
+table { 
+  table-layout:      fixed; 
+  width:             100%;
+}
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  FEATURES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -101,13 +101,8 @@ p {
 
 .homepage img{
   padding:          12px;
-  }
+  } 
 
-
-
-  /* STARTING POINT */
-/* STARTING POINT */
-/* STARTING POINT */
 
 /* --------------- Pinterest Tiles --------------- */
   
