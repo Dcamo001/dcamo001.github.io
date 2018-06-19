@@ -13,16 +13,22 @@ jQuery(document).ready(function() {
     });
     });
 
-    $('[data-fancybox="images"]').fancybox({
-        afterLoad : function(instance, current) {
-            var pixelRatio = window.devicePixelRatio || 1;
-    
-            if ( pixelRatio > 1.5 ) {
-                current.width  = current.width  / pixelRatio;
-                current.height = current.height / pixelRatio;
-            }
-        }
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+    jQuery(this).toggleClass('active');
+    jQuery('#logo').toggleClass('active');
+    e.preventDefault();
     });
+    });
+
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+    jQuery(this).toggleClass('active');
+    jQuery('#logotag').toggleClass('active');
+    e.preventDefault();
+    });
+    });      
+  
 
 //    $(".gallery").on('click',function(){
 //        //removes enlarged class from all images
