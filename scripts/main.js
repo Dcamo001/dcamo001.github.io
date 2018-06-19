@@ -13,15 +13,30 @@ jQuery(document).ready(function() {
     });
     });
 
-// Not working, supposed to highlight current page
+    $('[data-fancybox="images"]').fancybox({
+        afterLoad : function(instance, current) {
+            var pixelRatio = window.devicePixelRatio || 1;
+    
+            if ( pixelRatio > 1.5 ) {
+                current.width  = current.width  / pixelRatio;
+                current.height = current.height / pixelRatio;
+            }
+        }
+    });
 
-// (function setActive() { // defines function
-    // var pathname = (window.location.pathname.match(/[^/]+$/)[0]);
-    // $('a.current-item').each(function() {
-        // console.log("pathname ->", pathname)
-        // if ($(this).attr('href') == pathname) {
-            // $(this).addClass('active');
-        // }
-    // })();
+//    $(".gallery").on('click',function(){
+//        //removes enlarged class from all images
+//        $(".gallery.enlarged").removeClass('enlarged');
+//        //adds enlarged class to clicked image
+//        $(this).addClass('enlarged');
+//    });
 
-// setActive(); // calls function
+//    $(function ()
+//{
+//    $('img').on('click', function ()
+//    {
+//        $(this).width(1000);
+//    });
+//});
+
+
