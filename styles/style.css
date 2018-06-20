@@ -206,10 +206,6 @@ table {
   #logo.responsive {
     justify-content: center!important;
     margin:          -16px 0 -32px 0!important;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
   }
 
   #logotag.active {
