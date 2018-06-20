@@ -171,6 +171,10 @@ table {
     position:        absolute;
     top:             2.1%;
     background:    #444444;
+    transition:      .3s all ease-in-out;
+    -moz-webkit-transition: .3s all ease-in-out;
+    -ms-webkit-transition: .3s all ease-in-out;
+    -o-webkit-transition: .3s all ease-in-out;
   }
 
   .menu ul:after {
@@ -178,6 +182,10 @@ table {
     font-size:       12px;
     color:         black;
     display:         block;
+    transition:      .3s all ease-in-out;
+    -moz-webkit-transition: .3s all ease-in-out;
+    -ms-webkit-transition: .3s all ease-in-out;
+    -o-webkit-transition: .3s all ease-in-out;
     content:         "<a href="./portfolio.html">portfolio</a>,<a href="./blog.html">blog</a>,<a href="./about.html">about</a>,<a href="./prints.html">prints</a>";
   }
 
@@ -206,6 +214,10 @@ table {
   #logo.responsive {
     justify-content: center!important;
     margin:          -16px 0 -32px 0!important;
+        transition:      .3s all ease-in-out;
+    -moz-webkit-transition: .3s all ease-in-out;
+    -ms-webkit-transition: .3s all ease-in-out;
+    -o-webkit-transition: .3s all ease-in-out;
   }
 
   #logotag.active {
