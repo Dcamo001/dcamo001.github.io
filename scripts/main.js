@@ -27,7 +27,9 @@ jQuery(document).ready(function() {
     jQuery('#logotag').toggleClass('active');
     e.preventDefault();
     });
-    });      
+    });       
+
+   
   
 
 //    $(".gallery").on('click',function(){

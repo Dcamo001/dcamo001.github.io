@@ -154,10 +154,6 @@ table {
   .menu {
     display:         flex;
     justify-content: center;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
   }
 
   .menu ul.active {
@@ -171,10 +167,6 @@ table {
     position:        absolute;
     top:             2.1%;
     background:    #444444;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
   }
 
   .menu ul:after {
@@ -182,10 +174,6 @@ table {
     font-size:       12px;
     color:         black;
     display:         block;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
     content:         "<a href="./portfolio.html">portfolio</a>,<a href="./blog.html">blog</a>,<a href="./about.html">about</a>,<a href="./prints.html">prints</a>";
   }
 
