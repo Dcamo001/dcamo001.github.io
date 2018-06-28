@@ -217,7 +217,7 @@ table {
 
   #logo.responsive.active {
     justify-content: center!important;
-    padding:         100px 0 0 0;
+    padding:         92px 0 0 0;
     transition:      .3s all ease-in-out;
     -moz-webkit-transition: .3s all ease-in-out;
     -ms-webkit-transition: .3s all ease-in-out;
@@ -231,7 +231,7 @@ table {
   }
 
   ul#navbar{
-    padding:         36px 0 4px 0;
+    padding:         40px 0 4px 0;
   }
 }
 
