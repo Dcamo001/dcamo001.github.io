@@ -235,18 +235,34 @@ table {
   }
 }
 
-
+/*~~~~~~~~~~~~~~~~~ iPhone X Responsive Home Page ~~~~~~~~~~~~~~~~~*/
 @media only screen 
 
 and (device-width : 375px) 
 and (device-height : 812px) 
 and (-webkit-device-pixel-ratio : 3) {
-  
+
   h1 {
     font-size: 32px;
   }
 
 }
+/*~~~~~~~~~~~~~~~~~ iPhone X Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~ iPhone 6/7/8 Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+@media only screen 
+
+and (device-width : 375px) 
+and (device-height : 667px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+}
+/*~~~~~~~~~~~~~~~~~ iPhone 6/7/8 Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+
+
 
  
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
