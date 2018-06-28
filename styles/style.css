@@ -235,32 +235,27 @@ table {
   }
 }
 
-/*~~~~~~~~~~~~~~~~~ iPhone X Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
 @media only screen 
 
-and (device-width : 375px) 
-and (device-height : 812px) 
-and (-webkit-device-pixel-ratio : 3) {
-
+and (max-device-width : 375px) 
+and (max-device-height : 812px) 
+{
   h1 {
-    font-size: 32px;
+    font-size: 33px;
   }
-
 }
-/*~~~~~~~~~~~~~~~~~ iPhone X Responsive Home Page ~~~~~~~~~~~~~~~~~*/
 
-/*~~~~~~~~~~~~~~~~~ iPhone 6/7/8 Responsive Home Page ~~~~~~~~~~~~~~~~~*/
 @media only screen 
 
-and (device-width : 375px) 
-and (device-height : 667px) {
-
+and (max-device-width : 320px) 
+{
   h1 {
-    font-size: 32px;
+    font-size: 27px;
   }
-
 }
-/*~~~~~~~~~~~~~~~~~ iPhone 6/7/8 Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+
 
 
 
