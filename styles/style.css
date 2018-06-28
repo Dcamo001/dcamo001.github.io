@@ -242,7 +242,7 @@ and (max-device-width : 375px)
 and (max-device-height : 812px) 
 {
   h1 {
-    font-size: 33px;
+    font-size: 32px;
   }
 }
 
