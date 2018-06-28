@@ -128,6 +128,7 @@ table {
 }
 
 @media (max-width: 976px) {
+
   #container {
     width:           100%;
     height:          auto;
@@ -202,7 +203,7 @@ table {
   #logo.responsive {
     justify-content: center!important;
     margin:          -16px 0 -32px 0!important;
-        transition:      .3s all ease-in-out;
+    transition:      .3s all ease-in-out;
     -moz-webkit-transition: .3s all ease-in-out;
     -ms-webkit-transition: .3s all ease-in-out;
     -o-webkit-transition: .3s all ease-in-out;
@@ -233,6 +234,20 @@ table {
     padding:         36px 0 4px 0;
   }
 }
+
+
+@media only screen 
+
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+  
+  h1 {
+    font-size: 32px;
+  }
+
+}
+
  
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
