@@ -175,7 +175,9 @@ table {
     font-size:       12px;
     color:         black;
     display:         block;
-    content:         "<a href="./portfolio.html">portfolio</a>,<a href="./blog.html">blog</a>,<a href="./about.html">about</a>,<a href="./prints.html">prints</a>";
+    content:         "<a href="./portfolio.html">portfolio</a>,
+                      <a href="./blog.html">blog</a>,<a href="./about.html">about</a>,
+                      <a href="./prints.html">prints</a>";
   }
 
   .menu li {
@@ -200,24 +202,9 @@ table {
     text-decoration: none;
   }
 
-  #logo.responsive {
+  #logo {
     justify-content: center!important;
     margin:          -16px 0 -32px 0!important;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
-  }
-
-  #logotag.active {
-    display:         flex;
-    justify-content: center;
-    margin:          20px 0 40px 0!important;
-  }
-
-  #logo.responsive.active {
-    justify-content: center!important;
-    padding:         92px 0 0 0;
     transition:      .3s all ease-in-out;
     -moz-webkit-transition: .3s all ease-in-out;
     -ms-webkit-transition: .3s all ease-in-out;
@@ -230,13 +217,25 @@ table {
     margin:          24px 0 40px 0!important;
   }
 
+  #logo.active {
+    justify-content: center!important;
+    padding:         92px 0 0 0;
+    transition:      .3s all ease-in-out;
+  }
+
+  #logotag.active {
+    display:         flex;
+    justify-content: center;
+    margin:          20px 0 40px 0!important;
+  }
+
   ul#navbar{
     padding:         40px 0 4px 0;
   }
 }
 
 /*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
-@media only screen 
+@media only screen /*~~~~~~~~~~~~~~~ iPhone 6 >, Galaxy S5 > ~~~~~~~~~~~~~~~*/
 
 and (max-device-width : 375px) 
 and (max-device-height : 812px) 
@@ -246,7 +245,7 @@ and (max-device-height : 812px)
   }
 }
 
-@media only screen 
+@media only screen /*~~~~~~~~~~~~~~~ iPhone 5 <,  ~~~~~~~~~~~~~~~*/
 
 and (max-device-width : 320px) 
 {
@@ -255,12 +254,10 @@ and (max-device-width : 320px)
   }
 }
 /*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
-
-
-
-
  
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 
 
 

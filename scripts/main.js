@@ -29,9 +29,6 @@ jQuery(document).ready(function() {
     });
     });       
 
-   
-  
-
 //    $(".gallery").on('click',function(){
 //        //removes enlarged class from all images
 //        $(".gallery.enlarged").removeClass('enlarged');
