@@ -1,304 +1,308 @@
+
+* {
+  box-sizing:                     border-box;
+  padding:                        0;
+  margin:                         0;
+}
+
 html {
-  font-family:       'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-  background-color:  transparent;
-  text-align:        left;
-  margin:            12px 20px 0 20px;
-  box-sizing:        border-box;
+  font-family:                    'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color:               transparent;
+  text-align:                     left;
 }
 
 body {
-  background-color:white;
+  background-color:               white;
+  margin:                         0 16px 0 16px;
 }
 
 h1 {
-  font-size:         35px;
-  font-weight:       300;
-  letter-spacing:    5px;
-  margin:            0;
-  padding:           12px 0;
-  letter-spacing:    0.0555556em;
+  font-size:                      35px;
+  font-weight:                    300;
+  letter-spacing:                 5px;
+  margin:                         0;
+  padding:                        12px 0;
+  letter-spacing:                 0.0555556em;
 }
 
 h2 {
-  font-size:         25px;
-  font-weight:       300;
-  letter-spacing:    1.2px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size:                      25px;
+  font-weight:                    300;
+  letter-spacing:                 1.2px;
+  line-height:                    1;
+  margin:                         0;
+  padding:                        10px 0;
 }
 
 h3 {
-  font-size:         18px;
-  font-weight:       300;
-  letter-spacing:    1.2px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size:                      18px;
+  font-weight:                    300;
+  letter-spacing:                 1.2px;
+  line-height:                    1;
+  margin:                         0;
+  padding:                        10px 0;
 }
 
 h4 {
-  font-size:         12px;
-  font-weight:       400;
-  letter-spacing:    1.15px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size:                      12px;
+  font-weight:                    400;
+  letter-spacing:                 1.15px;
+  line-height:                    1;
+  margin:                         0;
+  padding:                        10px 0;
 }
 
 h5 {
-  font-size:         11px;
-  font-weight:       400;
-  letter-spacing:    1.5px;
-  line-height:       1;
+  font-size:                      11px;
+  font-weight:                    400;
+  letter-spacing:                 1.5px;
+  line-height:                    1;
 }
 
 p {
-  font-size:         12px;
-  line-height:       1.75;
-  letter-spacing:    1.5px;
-  font-weight:       300;
+  font-size:                      12px;
+  line-height:                    1.75;
+  letter-spacing:                 1.5px;
+  font-weight:                    300;
 }
 
 table { 
-  table-layout:      fixed; 
-  width:             100%;
+  table-layout:                   fixed; 
+  width:                          100%;
 }
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  FEATURES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-* {
-  box-sizing:        border-box;
-}
   
 .tiles {
-  // 	display:       flex;
-  // 	flex-direction:column;
-  // 	flex-wrap:     wrap;
-  // 	height:        100vw;
-  //  margin:        0;
-  //  width:         1600px;
+  // 	display:                    flex;
+  // 	flex-direction:             column;
+  // 	flex-wrap:                  wrap;
+  // 	height:                     100vw;
+  //  margin:                     0;
+  //  width:                      1600px;
   // }
   
 .tiles {
-  -webkit-column-gap:  2px;
-  -webkit-column-count:3;
-  width:               100%;
-  margin:              24px 0 0 0;
+  -webkit-column-gap:             2px;
+  -webkit-column-count:           3;
+  width:                          100%;
+  margin:                         24px 0 0 0;
 }
   
 .masonryImage img{
-  display:           inline-block;
-  width:             100%;
-  height:            auto;
-  margin:            auto;
+  display:                        inline-block;
+  width:                          100%;
+  height:                         auto;
+  margin:                         auto;
   }
 
 .homepage img{
-  padding:          12px;
+  padding:                        12px;
   } 
 
 #mobile-table {
-  display:          none;
+  display:                        none;
 }  
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  
+.mobileMenubar {
+  display:                        none;
+}
 
+.toggle-nav {
+  display:                        none;
+}
 
+.desktopMenubar ul, li {
+  display:                        flex;
+  margin:                         -54px -120px 0 0;
+  padding:                        0 0 0 188px;
+  font-size:                      12px;
+  line-height:                    1.75;
+  letter-spacing:                 1.5px;
+  font-weight:                    400;
+}
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.logo {
+  display:                             flex;
+  justify-content:                left;
+  margin:                         0 8px -44px 4px;
+  color:                          black;
+  text-decoration:                none;
+}
+
+.logotag {
+  display:                        flex;
+  margin:                         36px 0 60px 4px;
+}
+
+.desktopMenubar a:not(.logo) {
+  color:                          gray;
+  text-decoration:                none;
+}
+
+.desktopMenubar a:hover:not(.logo) {
+  text-decoration:                none;
+  color:                          black;
+  font-weight:                    bold;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive!  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 1528px) {
   #container {
-    width:           100%;
+    width:                        100%;
   }
   
   .tiles {
-    -webkit-column-count: 2;      
+    -webkit-column-count:         2;      
   }
 
   #mobile-table {
-    display:          none;
+    display:                      none;
   }  
 }
 
 @media (max-width: 976px) {
 
-  #container {
-    width:           100%;
-    height:          auto;
-    justify-content: center;
+  #tableContainer {
+    width:                        100%;
+    height:                       auto;
+    justify-content:              center;
   }
 
   #desktop-table {
-    display:          none;
+    display:                      none;
   }  
 
   #mobile-table {
-    display:          flex;
+    display:                      flex;
   } 
 
   h3 {
-    font-size: 14px;
+    font-size:                    14px;
   }
 
   .tiles {
-    -webkit-column-count: 1; 
-    margin:          12px 0 0 0; 
+    -webkit-column-count:         1; 
+    margin:                       12px 0 0 0; 
   } 
 
-  .menu {
-    display:         flex;
-    justify-content: center;
+  .desktopMenubar {
+    display:                      none;
   }
 
-  .menu ul.active {
-    display:         none;
+  .mobileMenubar {
+    display:                      flex;
+    flex-direction:               column;
+    position:                     relative;
+    width:                        100%;
+    margin:                       -52px 0 0 0;
+    text-decoration:              none;
+    color:                        black;
+    font-size:                    12px;
+    letter-spacing:               1.5px;
+    font-weight:                  400;
+    transition:                   .3s all ease-in-out;
+    -moz-webkit-transition:       .3s all ease-in-out;
+    -ms-webkit-transition:        .3s all ease-in-out;
+    -o-webkit-transition:         .3s all ease-in-out;
   }
 
-  .menu ul {
-    display:         flex;
-    flex-direction:  column;
-    width:           100%;
-    position:        absolute;
-    top:             2.1%;
-    background:    #444444;
+  .mobileMenubar.active {
+    display:                      flex;
+    flex-direction:               column;
+    position:                     relative;
+    width:                        100%;
+    margin:                       0 0 0 0;
+    text-decoration:              none;
+    color:                        black;
+    font-size:                    12px;
+    letter-spacing:               1.5px;
+    font-weight:                  400;
   }
 
-  .menu ul:after {
-    display:         flex;
-    font-size:       12px;
-    color:         black;
-    display:         block;
-    content:         "<a href="./portfolio.html">portfolio</a>,
-                      <a href="./blog.html">blog</a>,<a href="./about.html">about</a>,
-                      <a href="./prints.html">prints</a>";
+  .mobileMenubar ul, li {
+    display:                      flex; 
+    flex-direction:               column;
+    justify-content:              center;
+    background:                   #444444;
+    color:                        black;
+    text-decoration:              none;
+    padding:                      2px 0 2px 0;
   }
 
-  .menu li {
-    display:         flex;
-    padding:         2px 0 2px 0;
-    margin:          0 auto 0 auto;
+  .mobileMenubar li {
+    display:                      flex;
+    padding:                      2px 0 2px 0;
+    margin:                       0 auto 0 auto;
   }
 
-  .menu a {
-    display:         flex;
+  .mobileMenubar a:not(.logo) {
+    display:                      flex;
+    text-decoration:              none;
+    color:                        gray;
+  }
+  .mobileMenubar a:hover {
+    display:                      flex;
+    text-decoration:              none;
+    color:                        black;
+  }
+
+  .logo {
+    display:                      flex;
+    justify-content:              center;
+    color:                        black;
+    text-decoration:              none;
+    margin:                       -4px 0 -4px 0;
+  }
+
+  .logotag {
+    display:                      flex;
+    justify-content:              center;
+    color:                        black;
+    text-decoration:              none;
+    margin:                       0 0 2px 0;  
   }
 
   .toggle-nav {
-    display:         inline-block;
-    padding:         0 10px 2px 10px;
-    margin:          -36px 0 -8px 0;
-    color:         rgb(143, 143, 143);    
-    font-size:       24px;
+    display:                      flex;
+    justify-content:              center;
+    color:                        rgb(143, 143, 143);    
+    font-size:                    24px;
+    text-decoration:              none;
   }
 
-  .toggle-nav:hover, .toggle-nav.active {
-    text-decoration: none;
+  .toggle-nav:hover {
+    color:                        black;
   }
 
-  #logo {
-    justify-content: center!important;
-    margin:          -16px 0 -32px 0!important;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
-  }
-
-  #logotag {
-    display:         flex;
-    justify-content: center;
-    margin:          24px 0 40px 0!important;
-  }
-
-  #logo.active {
-    justify-content: center!important;
-    padding:         92px 0 0 0;
-    transition:      .3s all ease-in-out;
-  }
-
-  #logotag.active {
-    display:         flex;
-    justify-content: center;
-    margin:          20px 0 40px 0!important;
-  }
-
-  ul#navbar{
-    padding:         40px 0 4px 0;
-  }
 }
 
 /*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
+
 @media only screen /*~~~~~~~~~~~~~~~ iPhone 6 >, Galaxy S5 > ~~~~~~~~~~~~~~~*/
 
-and (max-device-width : 375px) 
-and (max-device-height : 812px) 
+and (max-device-width: 375px) 
+and (max-device-height: 812px) 
 {
   h1 {
-    font-size: 32px;
+    font-size:                    32px;
   }
 }
 
 @media only screen /*~~~~~~~~~~~~~~~ iPhone 5 <,  ~~~~~~~~~~~~~~~*/
 
-and (max-device-width : 320px) 
+and (max-device-width: 320px) 
 {
   h1 {
-    font-size: 27px;
+    font-size:                    27px;
   }
 }
 /*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
  
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Desktop Navbar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.toggle-nav {
-  display:           none;
-}
-
-.menu ul, li {
-  display:           flex;
-  margin:            -54px -120px 0 0;
-  padding:           0 0 0 188px;
-  font-size:         12px;
-  line-height:       1.75;
-  letter-spacing:    1.5px;
-  font-weight:       400;
-}
-
-#logo {
-  display:           flex;
-  justify-content:   left;
-  margin:            0 8px -44px 0;
-  color:           black;
-  text-decoration:   none!important;
-}
-
-#logotag {
-  display:         flex;
-  margin:          36px 0 60px 8px;
-}
-
-.menu a {
-  color:           gray;
-  text-decoration:   none;
-}
-
-.menu a:hover, .menu a.current-item {
-  text-decoration:   none;
-  color:           black;
-  font-weight:       bold;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Desktop Navbar   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive!  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
