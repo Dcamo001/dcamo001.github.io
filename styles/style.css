@@ -126,7 +126,7 @@ table {
 }
 
 .logo {
-  display:                             flex;
+  display:                        flex;
   justify-content:                left;
   margin:                         0 8px -44px 4px;
   color:                          black;
@@ -228,6 +228,7 @@ table {
     display:                      flex; 
     flex-direction:               column;
     justify-content:              center;
+    margin:                       0 -16px 0 -16px;
     background:                   #444444;
     color:                        black;
     text-decoration:              none;
