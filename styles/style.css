@@ -2,7 +2,7 @@
 * {
   box-sizing:                     border-box;
   padding:                        0;
-  margin:                         0;
+  margin:                         2px;
 }
 
 html {
@@ -106,6 +106,22 @@ table {
 }  
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Video ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  margin: 12px;
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Video ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .mobileMenubar {
   display:                        none;
 }
