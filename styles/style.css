@@ -2,7 +2,7 @@
 * {
   box-sizing:                     border-box;
   padding:                        0;
-  margin:                         0;
+  margin:                         2px;
 }
 
 html {
@@ -214,7 +214,7 @@ video {
     flex-direction:               column;
     position:                     relative;
     width:                        100%;
-    margin:                       -52px 0 0 0;
+    margin:                       -61px 0 0 0;
     text-decoration:              none;
     color:                        black;
     font-size:                    12px;
