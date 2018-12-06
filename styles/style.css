@@ -286,6 +286,7 @@ video {
   .toggle-nav {
     display:                      flex;
     justify-content:              center;
+    margin:                       2px 0 0 0;
     color:                        rgb(143, 143, 143);    
     font-size:                    24px;
     text-decoration:              none;
