@@ -4,14 +4,21 @@
 //
 //jQuery.noConflict();
 
-
 jQuery(document).ready(function() {
-    jQuery('.toggle-nav').click(function(e) {
-    jQuery(this).toggleClass('active');
-    jQuery('.mobileMenubar').toggleClass('active');
+  jQuery(".toggle-nav").click(function(e) {
+    jQuery(this).toggleClass("active");
+    jQuery(".mobileMenubar").toggleClass("active");
     e.preventDefault();
-    });
-    });
+  });
+});
+
+$(document).ready(function() {
+  $("[href]").each(function() {
+    if (this.href == window.location.href) {
+      $(this).addClass("active");
+    }
+  });
+});
 
 //    $(".gallery").on('click',function(){
 //        //removes enlarged class from all images
@@ -27,5 +34,3 @@ jQuery(document).ready(function() {
 //        $(this).width(1000);
 //    });
 //});
-
-
