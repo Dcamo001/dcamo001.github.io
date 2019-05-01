@@ -141,10 +141,10 @@ a.logo.active {
 
 .desktopMenubar ul, li {
   display:                        flex;
-  margin:                         -54px -120px 0 0;
-  padding:                        0 0 0 188px;
+  margin:                         -54px -116px -20px 116px;
+  padding:                        0px 0px 0px 90px;
   font-size:                      12px;
-  line-height:                    1.75;
+  height:                         20px;
   letter-spacing:                 1.5px;
   font-weight:                    400;
 }
