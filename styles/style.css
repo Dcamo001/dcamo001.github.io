@@ -122,6 +122,13 @@ video {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Video ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+form {
+  font-size:                      12px;
+  line-height:                    1.75;
+  letter-spacing:                 1.5px;
+  font-weight:                    300;
+}
+
 .mobileMenubar {
   display:                        none;
 }
