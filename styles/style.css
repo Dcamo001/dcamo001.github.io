@@ -122,7 +122,8 @@ video {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Video ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-form {
+table.payment-buttons {
+  text-align: center;
   font-size:                      12px;
   line-height:                    1.75;
   letter-spacing:                 1.5px;
