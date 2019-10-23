@@ -25,8 +25,16 @@ h1 {
   letter-spacing: 0.0555556em;
 }
 
-h2 {
+h2.title {
   font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1.2px;
   line-height: 1;
