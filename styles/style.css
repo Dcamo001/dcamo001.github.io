@@ -11,9 +11,17 @@ html {
   text-align: left;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 body {
   background-color: white;
-  margin: 0 16px 0 16px;
+  margin: 0px 16px 0px 16px;
 }
 
 h1 {
@@ -114,7 +122,7 @@ table {
 }
 
 .homepage img {
-  padding: 16px 12px 10px 12px;
+  padding: 1.6rem 1.2rem 1rem 1.2rem;
 }
 
 #mobile-table {
