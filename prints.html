@@ -191,7 +191,7 @@
       metallic. The paper is heavyweight, high-gloss for maximum color and image
       resolution. The metallic photo paper displays additional level of
       iridescence and depth as you look at it or in different lighting
-      situations. High quality and cost effective.
+      situations. Either options are high quality and cost effective.
       <br />
       <br />
       8" x 10" -- $25
@@ -325,11 +325,36 @@
               <tr>
                 <td>
                   <select name="os0">
-                    <option value="8 x 10">8 x 10 $25.00 USD</option>
-                    <option value="12 x 18">12 x 18 $40.00 USD</option>
-                    <option value="16 x 24">16 x 24 $75.00 USD</option>
-                    <option value="20 x 30">20 x 30 $100.00 USD</option>
-                    <option value="30 x 45">30 x 45 $150.00 USD</option>
+                    <option value="Glossy 8 x 10"
+                      >Glossy 8 x 10 $25.00 USD</option
+                    >
+                    <option value="Glossy 12 x 18"
+                      >Glossy 12 x 18 $40.00 USD</option
+                    >
+                    <option value="Glossy 16 x 24"
+                      >Glossy 16 x 24 $75.00 USD</option
+                    >
+                    <option value="Glossy 20 x 30"
+                      >Glossy 20 x 30 $100.00 USD</option
+                    >
+                    <option value="Glossy 30 x 45"
+                      >Glossy 30 x 45 $150.00 USD</option
+                    >
+                    <option value="Metallic 8 x 10"
+                      >Metallic 8 x 10 $25.00 USD</option
+                    >
+                    <option value="Metallic 12 x 18"
+                      >Metallic 12 x 18 $40.00 USD</option
+                    >
+                    <option value="Metallic 16 x 24"
+                      >Metallic 16 x 24 $75.00 USD</option
+                    >
+                    <option value="Metallic 20 x 30"
+                      >Metallic 20 x 30 $100.00 USD</option
+                    >
+                    <option value="Metallic 30 x 45"
+                      >Metallic 30 x 45 $150.00 USD</option
+                    >
                   </select>
                 </td>
               </tr>
@@ -339,15 +364,13 @@
                     type="hidden"
                     name="on1"
                     value="Please provide the file number"
-                  />Please provide the file number, and let me know if you want
-                  glossy or metallic photo paper<strong>*</strong>
+                  />Please provide the file number<strong>*</strong>
                 </td>
               </tr>
               <tr>
                 <td><input type="text" name="os1" maxlength="200" /></td>
               </tr>
             </table>
-
             <input type="hidden" name="currency_code" value="USD" />
             <input
               type="image"
@@ -382,7 +405,7 @@
       <strong>Various size prints in example settings.</strong>
     </p>
     <div id="tableContainer">
-      <div class="tiles">
+      <div class="tiles" id="PrintsTableContainer">
         <div class="masonryImage">
           <img
             src="images/Prints/8x10x12x18BerkeleySunset.jpg"
@@ -419,7 +442,7 @@
       >
     </p>
     <div id="tableContainer">
-      <div class="tiles">
+      <div class="tiles" id="PrintsTableContainer">
         <div class="masonryImage">
           <img
             src="images/Prints/7R304918web.jpg"
@@ -446,6 +469,7 @@
         </div>
       </div>
     </div>
+
     <br />
     <br />
 

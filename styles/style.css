@@ -212,6 +212,9 @@ li {
   font-weight: bold;
 }
 
+#PrintsTableContainer {
+  -webkit-column-count: 2;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive!  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 1528px) {
@@ -230,9 +233,7 @@ li {
 
 @media (max-width: 976px) {
   #tableContainer {
-    width: 100%;
     height: auto;
-    justify-content: center;
   }
 
   #desktop-table {
