@@ -305,7 +305,7 @@ li {
     color: black;
     text-decoration: none;
     padding: 4px 0 4px 0;
-    height: 120px;
+    height: 10em;
   }
 
   .mobileMenubar li {
@@ -360,22 +360,3 @@ li {
     color: black;
   }
 }
-
-/*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
-
-@media only screen /*~~~~~~~~~~~~~~~ iPhone 6 >,
-  Galaxy S5 > ~~~~~~~~~~~~~~~*/ and (max-device-width: 375px) and (max-device-height: 812px) {
-  h1 {
-    font-size: 32px;
-  }
-}
-
-@media only screen /*~~~~~~~~~~~~~~~ iPhone 5 <,
-  ~~~~~~~~~~~~~~~*/ and (max-device-width: 320px) {
-  h1 {
-    font-size: 27px;
-  }
-}
-/*~~~~~~~~~~~~~~~~~ Various Devices Responsive Home Page ~~~~~~~~~~~~~~~~~*/
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive!  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
