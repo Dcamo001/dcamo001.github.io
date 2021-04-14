@@ -265,8 +265,11 @@ li {
   .mobileMenubar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
+    max-width: 100%;
     text-decoration: none;
+    margin: -60px 0 0 0;
     color: black;
     font-size: 12px;
     transition: 0.3s all ease-in-out;
@@ -280,7 +283,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: -108px -16px 0 -16px;
+    position: relative;
+    max-width: 100%;
     padding: 4px 0 4px 0;
     background: #444444;
     color: black;
@@ -304,7 +308,7 @@ li {
     position: relative;
     width: auto;
     height: auto;
-    margin: 54px 0 0 0;
+    margin: 0px;
     text-decoration: none;
     color: black;
     font-size: 12px;
