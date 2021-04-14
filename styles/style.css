@@ -266,9 +266,8 @@ li {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
-    margin: -60px 0 0 0;
     text-decoration: none;
     color: black;
     font-size: 12px;
@@ -278,38 +277,46 @@ li {
     -o-webkit-transition: 0.3s all ease-in-out;
   }
 
-  .mobileMenubar.active {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-  }
-
   .mobileMenubar ul,
   li {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 -16px 0 -16px;
+    padding: 4px 0 4px 0;
     background: #444444;
     color: black;
     text-decoration: none;
-    padding: 4px 0 4px 0;
     height: 10em;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   .mobileMenubar li {
     display: flex;
     flex-direction: column;
+    margin: auto;
     padding: 2px 0 2px 0;
-    margin: 0 auto 0 auto;
+  }
+
+  .mobileMenubar.active {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 60px 0 0 0;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   .mobileMenubar a:not(.logo) {
