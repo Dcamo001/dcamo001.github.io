@@ -101,11 +101,11 @@ table {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .tiles {
-  // 	display:                    flex;
-  // 	flex-flow:                  column wrap;
-  // 	height:                     100px;
-  //  margin:                     0;
-  //  width:                      1600px;
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  margin: 0;
+  width: auto;
 }
 
 .tiles {
@@ -117,9 +117,9 @@ table {
 
 .masonryImage img {
   display: inline-block;
-  width: 100%;
-  height: auto;
-  margin: 1px 0 1px 0;
+  margin: 0.1em auto;
+  max-width: 100%;
+  column-gap: 0.1em;
 }
 
 .homepage img {
