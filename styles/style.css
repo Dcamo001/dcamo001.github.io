@@ -103,7 +103,7 @@ table {
 .tiles {
   // display: flex;
   // flex-flow: column wrap;
-  //  height: auto;
+  // height: auto;
   // margin: 0;
   // width: auto;
 }
@@ -265,6 +265,7 @@ li {
   .tiles {
     -webkit-column-count: 1;
     margin: 0.1em auto;
+    padding: 0 4px;
   }
 
   .mobileMenubar {
