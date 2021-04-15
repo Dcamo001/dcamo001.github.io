@@ -265,7 +265,7 @@ li {
   .tiles {
     -webkit-column-count: 1;
     margin: 0.1em auto;
-    padding: 0 4px;
+    padding: 0 1vw;
   }
 
   .mobileMenubar {
