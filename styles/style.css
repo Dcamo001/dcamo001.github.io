@@ -17,11 +17,8 @@ html {
 
 body {
   font-size: 1.6rem;
-}
-
-body {
+  width: 100vw;
   background-color: white;
-  margin: 0px 16px 0px 16px;
 }
 
 h1 {
@@ -89,11 +86,18 @@ p {
   line-height: 1.75;
   letter-spacing: 1.5px;
   font-weight: 300;
+  margin: auto 12px;
 }
 
 table {
   table-layout: fixed;
   width: 100%;
+}
+
+.PageSocialLogos {
+  margin: 6px 6px;
+  display: flex;
+  align-self: flex-end;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  FEATURES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -104,7 +108,7 @@ table {
   // display: flex;
   // flex-flow: column wrap;
   // height: auto;
-  // margin: 0;
+  // margin: auto;
   // width: auto;
 }
 
@@ -113,17 +117,16 @@ table {
   -webkit-column-count: 3;
   width: 100%;
   margin: 24px 0 0 0;
+  padding: 0.33em;
 }
 
 .masonryImage img {
   display: inline-block;
-  margin: 0.1em auto;
   max-width: 100%;
-  column-gap: 0.1em;
 }
 
 .homepage img {
-  padding: 1.6rem 1.2rem 1rem 1.2rem;
+  padding: 1.6rem 1.2rem 0.75rem 1.2rem;
 }
 
 #mobile-table {
@@ -140,7 +143,8 @@ table {
 }
 
 video {
-  margin: 12px;
+  margin: 12px 80px;
+  padding: 0 8px;
   width: 100%;
   max-width: 720px;
 }
@@ -191,14 +195,14 @@ li {
 .logo {
   display: flex;
   justify-content: left;
-  margin: 0 8px -44px 4px;
+  margin: 0 8px -44px 12px;
   color: black;
   text-decoration: none;
 }
 
 .logotag {
   display: flex;
-  margin: 36px 0 60px 4px;
+  margin: 36px 0 60px 12px;
 }
 
 .desktopMenubar a:not(.logo) {
@@ -245,7 +249,6 @@ li {
   }
 
   body {
-    width: 100vw;
     margin: auto;
   }
 
@@ -264,8 +267,6 @@ li {
 
   .tiles {
     -webkit-column-count: 1;
-    margin: 0.1em auto;
-    padding: 0 1vw;
   }
 
   .mobileMenubar {
@@ -275,7 +276,7 @@ li {
     position: relative;
     max-width: 100%;
     text-decoration: none;
-    margin: -60px 0 8px 0;
+    margin: -66px 0 8px 0;
     color: black;
     font-size: 12px;
     transition: 0.3s all ease-in-out;
@@ -291,7 +292,7 @@ li {
     justify-content: center;
     position: relative;
     max-width: 100%;
-    padding: 4px 0 4px 0;
+    padding: 4px 0 6px 0;
     background: #444444;
     color: black;
     text-decoration: none;
@@ -305,7 +306,7 @@ li {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 2px 0 2px 0;
+    padding: 1em;
   }
 
   .mobileMenubar.active {
