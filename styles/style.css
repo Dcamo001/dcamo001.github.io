@@ -216,12 +216,24 @@ li {
   font-weight: bold;
 }
 
-#PrintsTableContainer {
+#PrintsTableContainer1 {
+  -webkit-column-count: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#PrintsTableContainer1 img {
+  padding: 2px 2px 2px 2px;
+}
+
+#PrintsTableContainer2 {
   -webkit-column-count: 2;
   margin: 12px 0 0 0;
 }
 
-#PrintsTableContainer img {
+#PrintsTableContainer2 img {
   padding: 2px 2px 2px 2px;
 }
 
