@@ -115,6 +115,8 @@ table {
 .tiles {
   -webkit-column-gap: 4px;
   -webkit-column-count: 3;
+  column-gap: 4px;
+  column-count: 3;
   width: 100%;
   margin: 24px 0 0 0;
   padding: 0.33em;
@@ -218,6 +220,7 @@ li {
 
 #PrintsTableContainer1 {
   -webkit-column-count: 2;
+  column-count: 2;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -230,6 +233,7 @@ li {
 
 #PrintsTableContainer2 {
   -webkit-column-count: 2;
+  column-count: 2;
   margin: 12px 0 0 0;
 }
 
@@ -247,6 +251,7 @@ li {
 
   .tiles {
     -webkit-column-count: 2;
+    column-count: 2;
   }
 
   #mobile-table {
@@ -279,6 +284,7 @@ li {
 
   .tiles {
     -webkit-column-count: 1;
+    column-count: 1;
   }
 
   .mobileMenubar {
