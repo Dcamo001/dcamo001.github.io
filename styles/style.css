@@ -222,8 +222,7 @@ li {
   -webkit-column-count: 2;
   column-count: 2;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 12px auto;
   width: 90%;
 }
 
