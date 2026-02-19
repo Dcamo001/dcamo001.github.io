@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -29,55 +29,35 @@
       name="description"
       content="This page is a live instagram feed for @dcamozzo, a San Francisco Bay Area photographer and videographer who specializes in landscape and portrait work."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:900,700,400,300,100"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <title>Camozzo Media | @dcamozzo Instagram Feed</title>
-    <!-- Facebook Pixel Code -->
     <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "438359990132303");
-      fbq("track", "PageView");
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.fbq) return;
+        var n = (window.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); });
+        if (!window._fbq) window._fbq = n;
+        n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
+        var t = document.createElement("script"); t.async = !0; t.src = "https://connect.facebook.net/en_US/fbevents.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s);
+        fbq("init", "438359990132303"); fbq("track", "PageView");
+      });
     </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=438359990132303&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=438359990132303&ev=PageView&noscript=1" alt="" /></noscript>
   </head>
 
   <body>
     <!-- navbar -->
 
-    <div class="mobileMenubar">
-      <nav class="mobileMenubar">
+    <main id="main-content">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="mobileMenubar" role="banner">
+      <nav class="mobileMenubar-inner" aria-label="Main menu">
         <ul>
           <li><a href="./instagram.html">instagram</a></li>
           <li><a href="./people.html">people & things</a></li>
@@ -88,13 +68,12 @@
       </nav>
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
       <h5 class="logotag">- PHOTO / VIDEO -</h5>
-      <a class="toggle-nav" href="#">&#9776;</a>
-    </div>
-
-    <div class="desktopMenubar">
+      <button type="button" class="toggle-nav" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </header>
+    <header class="desktopMenubar" role="banner">
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
       <h5 class="logotag">- PHOTO / VIDEO -</h5>
-      <nav>
+      <nav aria-label="Main menu">
         <ul style="width: 95%">
           <li><a href="./instagram.html">instagram</a></li>
           <li><a href="./people.html">people & things</a></li>
@@ -102,12 +81,13 @@
           <li><a href="./about.html">contact/about</a></li>
           <li><a href="./prints.html">prints</a></li>
         </ul>
-        <a class="toggle-nav" href="#">&#9776;</a>
+        <button type="button" class="toggle-nav" aria-label="Open menu" aria-hidden="true" tabindex="-1">&#9776;</button>
       </nav>
-    </div>
+    </header>
 
     <!-- navbar -->
 
+    <main id="main-content">
     <br />
 
     <!-- Place <div> tag where you want the feed to appear -->
@@ -120,16 +100,12 @@
     <br />
     <br />
 
-    <div class="PageSocialLogos">
-      <a href="https://www.instagram.com/dcamozzo/"
-        ><img src="logos/InstagramLogo.png" width="40" height="40"
-      /></a>
-      <a align="left" href="mailto:danny@camozzomedia.com"
-        ><img src="logos/EmailLogo.png" width="45"
-      /></a>
-    </div>
+    </main>
 
-    <script src="./scripts/jquery-3.2.1.js"></script>
+    <div class="PageSocialLogos">
+      <a href="https://www.instagram.com/dcamozzo/" aria-label="Instagram"><img src="logos/InstagramLogo.png" width="40" height="40" alt="Instagram" /></a>
+      <a href="mailto:danny@camozzomedia.com" aria-label="Email"><img src="logos/EmailLogo.png" width="45" height="45" alt="Email" /></a>
+    </div>
     <script src="scripts/main.js"></script>
     <script type="text/javascript">
       /* curator-feed-default-layout */

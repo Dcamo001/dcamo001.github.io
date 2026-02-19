@@ -1,6 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Danny Camozzo, California based Photography and Videography. Landscape and portrait photography from California, National Parks around the US, and scenic views worldwide. The main website, homepage, and portfolio of Camozzo Media."
+    />
+    <title>Danny Camozzo Photo and Video</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="styles/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -12,72 +33,48 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "UA-148429604-1");
     </script>
-
-    <meta charset="utf-8" />
-    <link
-      href="styles/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="all"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Danny Camozzo, California based Photography and Videography. Landscape and portrait photography from California, National Parks around the US, and scenic views worldwide. The main website, homepage, and portfolio of Camozzo Media."
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:900,700,400,300,100"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Danny Camozzo Photo and Video</title>
-    <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code (deferred) -->
     <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.fbq) return;
+        var n = (window.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
             : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
+        });
+        if (!window._fbq) window._fbq = n;
         n.push = n;
         n.loaded = !0;
         n.version = "2.0";
         n.queue = [];
-        t = b.createElement(e);
+        var t = document.createElement("script");
         t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
+        t.src = "https://connect.facebook.net/en_US/fbevents.js";
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "438359990132303");
-      fbq("track", "PageView");
+        fbq("init", "438359990132303");
+        fbq("track", "PageView");
+      });
     </script>
-    <noscript
-      ><img
+    <noscript>
+      <img
         height="1"
         width="1"
         style="display: none"
         src="https://www.facebook.com/tr?id=438359990132303&ev=PageView&noscript=1"
-    /></noscript>
+        alt=""
+      />
+    </noscript>
     <!-- End Facebook Pixel Code -->
   </head>
 
   <body>
-    <!-- navbar -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="mobileMenubar">
-      <nav class="mobileMenubar">
+    <header class="mobileMenubar" role="banner">
+      <nav class="mobileMenubar-inner" aria-label="Main menu">
         <ul>
           <li><a href="./instagram.html">instagram</a></li>
           <li><a href="./people.html">people & things</a></li>
@@ -88,13 +85,20 @@
       </nav>
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
       <h5 class="logotag">- PHOTO / VIDEO -</h5>
-      <a class="toggle-nav" href="#">&#9776;</a>
-    </div>
+      <button
+        type="button"
+        class="toggle-nav"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+    </header>
 
-    <div class="desktopMenubar">
+    <header class="desktopMenubar" role="banner">
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
       <h5 class="logotag">- PHOTO / VIDEO -</h5>
-      <nav>
+      <nav aria-label="Main menu">
         <ul style="width: 95%">
           <li><a href="./instagram.html">instagram</a></li>
           <li><a href="./people.html">people & things</a></li>
@@ -102,347 +106,134 @@
           <li><a href="./about.html">contact/about</a></li>
           <li><a href="./prints.html">prints</a></li>
         </ul>
-        <a class="toggle-nav" href="#">&#9776;</a>
+        <button
+          type="button"
+          class="toggle-nav"
+          aria-label="Open menu"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          &#9776;
+        </button>
       </nav>
-    </div>
+    </header>
 
-    <!-- navbar -->
+    <main id="main-content" class="homepage" role="main">
+      <div class="homepage-grid">
+        <article class="album-tile album-california">
+          <a href="California.html">
+            <div class="masonryImage">
+              <img
+                src="images/HomePages/7R307086webhome.jpg"
+                alt="Golden sunset with double rainbow over the Berkeley Hills in the San Francisco Bay, CA"
+                width="600"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </a>
+          <h2>California</h2>
+        </article>
 
-    <!-- Albums -->
+        <article class="album-tile album-europe">
+          <a href="Europe.html">
+            <div class="masonryImage">
+              <img
+                src="images/Europe/7R306602home.jpg"
+                alt="Monte Cristallo in Italian Dolomites"
+                width="600"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </a>
+          <h2>Europe</h2>
+        </article>
 
-    <!-- Desktop Table -->
+        <article class="album-tile album-pretty-things">
+          <a href="PrettyThings.html">
+            <div class="masonryImage">
+              <img
+                src="images/HomePages/7R307635webhome.jpg"
+                alt="Little honeybee pollinating torch lillies in the Berkeley Hills, CA."
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <h2>Pretty Things</h2>
+        </article>
 
-    <table class="homepage" id="desktop-table">
-      <div id="tableContainer">
-        <tr>
-          <!-- California -->
-          <th>
-            <a href="California.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307086webhome.jpg"
-                    alt="Golden sunset with double rainbow over the Berkeley Hills in the San Francisco Bay, CA"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">California</h2>
-          </th>
-          <!-- California -->
+        <article class="album-tile album-north-cascades">
+          <a href="NorthCascades.html">
+            <div class="masonryImage">
+              <img
+                src="images/HomePages/7R307788-Panowebhome.jpg"
+                alt="Lake Diablo during sunset in the North Cascades, Washington."
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <h2>North Cascades</h2>
+        </article>
 
-          <!-- Europe -->
-          <th>
-            <a href="Europe.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/Europe/7R306602home.jpg"
-                    alt="Monte Cristallo in Italian Dolomites"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">Europe</h2>
-          </th>
-          <!-- Europe -->
+        <article class="album-tile album-oregon-montana">
+          <a href="Oregon-and-Montana.html">
+            <div class="masonryImage">
+              <img
+                src="images/HomePages/7R309255webhome.jpg"
+                alt="Haystack Rock at Cannon Beach, Oregon"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <h2>Oregon & Montana</h2>
+        </article>
 
-          <!-- Flora & Textures -->
-          <th>
-            <a href="PrettyThings.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307635webhome.jpg"
-                    alt="Little honeybee pollinating torch lillies in the Berkeley Hills, CA."
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">Pretty Things</h2>
-          </th>
-          <!-- Flora & Textures -->
-        </tr>
-
-        <tr>
-          <!-- North Cascades -->
-          <th>
-            <a href="NorthCascades.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307788-Panowebhome.jpg"
-                    alt="Lake Diablo during sunset in the North Cascades, Washington."
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">North Cascades</h2>
-          </th>
-          <!-- North Cascades -->
-
-          <!-- Oregon & Montana -->
-          <th>
-            <a href="Oregon and Montana.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R309255webhome.jpg"
-                    alt="Haystack Rock at Cannon Beach, Oregon"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">Oregon & Montana</h2>
-          </th>
-          <!-- Oregon & Montana -->
-
-          <!-- Hawaii, July 2015 -->
-          <th>
-            <a href="Hawaii.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R300289webhome.jpeg"
-                    alt="Na Pali Coast from the water with a rainbow in Kauai, HI"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">Hawaii</h2>
-          </th>
-          <!-- Hawaii, July 2015 -->
-        </tr>
+        <article class="album-tile album-hawaii">
+          <a href="Hawaii.html">
+            <div class="masonryImage">
+              <img
+                src="images/HomePages/7R300289webhome.jpeg"
+                alt="Na Pali Coast from the water with a rainbow in Kauai, HI"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <h2>Hawaii</h2>
+        </article>
       </div>
-    </table>
-
-    <!-- Desktop Table -->
-
-    <!-- Mobile Table -->
-
-    <table class="homepage" id="mobile-table">
-      <div id="tableContainer">
-        <tr>
-          <!-- California -->
-          <th>
-            <a href="California.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307086webhome.jpg"
-                    alt="Golden sunset with double rainbow over the Berkeley Hills in the San Francisco Bay, CA"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">California</h2>
-          </th>
-          <!-- California -->
-
-          <!-- Europe -->
-          <th>
-            <a href="Europe.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/Europe/7R306602home.jpg"
-                    alt="Monte Cristallo in Italian Dolomites"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Europe</h2>
-          </th>
-          <!-- Europe -->
-        </tr>
-
-        <tr>
-          <!-- Hawaii, July 2015 -->
-          <th>
-            <a href="Hawaii.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R300289webhome.jpeg"
-                    alt="Na Pali Coast from the water with a rainbow in Kauai, HI"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Hawaii</h2>
-          </th>
-          <!-- Hawaii, July 2015 -->
-
-          <!-- Flora & Textures -->
-          <th>
-            <a href="PrettyThings.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307635webhome.jpg"
-                    alt="Little honeybee pollinating torch lillies in the Berkeley Hills, CA."
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Pretty Things</h2>
-          </th>
-          <!-- Flora & Textures -->
-        </tr>
-
-        <tr>
-          <!-- Oregon & Montana -->
-          <th>
-            <a href="Oregon and Montana.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R309255webhome.jpg"
-                    alt="Haystack Rock at Cannon Beach, Oregon"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Oregon & Montana</h2>
-          </th>
-          <!-- Oregon & Montana -->
-
-          <!-- North Cascades -->
-          <th>
-            <a href="NorthCascades.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R307788-Panowebhome.jpg"
-                    alt="Lake Diablo during sunset in the North Cascades, Washington."
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">North Cascades</h2>
-          </th>
-          <!-- North Cascades -->
-        </tr>
-      </div>
-    </table>
-
-    <!-- Mobile Table -->
-
-    <!-- Archived
-    
-                  <th>
-                    <a href="Sierra Nevadas.html">
-                      <div id="tableContainer">
-                        <div class="masonryImage">
-                          <img
-                            src="images/HomePages/7R305836webhome.jpg"
-                            alt="El Capitan from meadow in Yosemite Valley, CA"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <h2 align="center">Sierra Nevadas</h2>
-                  </th>
-                   Sierra Nevadas 
-        
-           Marin 
-          <th>
-            <a href="Marin.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/California/7R302453home.jpg"
-                    alt="Golden Sunset and Bugs at Mt Tam, CA"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 align="center">Marin</h2>
-          </th>
-           Marin 
-
-                  <th>
-                    <a href="Big Sur.html">
-                      <div id="tableContainer">
-                        <div class="masonryImage">
-                          <img
-                            src="images/HomePages/7R304680webhome.jpg"
-                            alt="McWay Cove in Big Sur, CA"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <h2 align="center">Big Sur</h2>
-                  </th>
-                  Big Sur
-                
-        <tr>
-          Tulum, Mexico 
-          <th>
-            <a href="Tulum.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/IMG_8509webhome.jpg"
-                    alt="Bejuco Tree House Teepees in Tulum, MX"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Tulum, Mexico</h2>
-          </th>
-           Tulum, Mexico 
-
-           Charleston 
-          <th>
-            <a href="Charleston.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/Charleston/7R301121home.jpg"
-                    alt="Tree Tunnel at Battery Park, Charleston SC"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">Charleston, SC</h2>
-          </th>
-           Charleston 
-        </tr>
-
-        <tr>
-           DC & NoVA to CA 
-          <th>
-            <a href="VAtoCA.html">
-              <div id="tableContainer">
-                <div class="masonryImage">
-                  <img
-                    src="images/HomePages/7R300156webhome.jpg"
-                    alt="Crab Bushels on the Eastern Shore of Maryland"
-                  />
-                </div>
-              </div>
-            </a>
-            <h2 class="mobile" align="center">VA > CA</h2>
-          </th>
-           DC & NoVA to CA 
-        </tr>
-                
-                -->
+    </main>
 
     <br />
     <br />
 
     <div class="PageSocialLogos">
-      <a href="https://www.instagram.com/dcamozzo/"
-        ><img src="logos/InstagramLogo.png" width="40" height="40"
-      /></a>
-      <a align="left" href="mailto:danny@camozzomedia.com"
-        ><img src="logos/EmailLogo.png" width="45"
-      /></a>
+      <a href="https://www.instagram.com/dcamozzo/" aria-label="Instagram">
+        <img
+          src="logos/InstagramLogo.png"
+          width="40"
+          height="40"
+          alt="Instagram"
+        />
+      </a>
+      <a href="mailto:danny@camozzomedia.com" aria-label="Email">
+        <img
+          src="logos/EmailLogo.png"
+          width="45"
+          height="45"
+          alt="Email"
+        />
+      </a>
     </div>
 
-    <script src="./scripts/jquery-3.2.1.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
