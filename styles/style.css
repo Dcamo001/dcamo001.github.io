@@ -131,12 +131,42 @@ table {
   width: 100%;
   margin: 0;
   padding: 0.33em;
+  /* Avoid stretching short tiles to row height (fixes tall / distorted imgs on iOS) */
+  align-items: start;
 }
 
 .album-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Match homepage thumbnail frame (820×664); cover prevents vertical stretch */
+.homepage-grid .album-tile > a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.homepage-grid .album-tile .masonryImage {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 820 / 664;
+  overflow: hidden;
+}
+
+.homepage-grid .album-tile .masonryImage img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  /* Override .homepage img padding so the frame matches desktop thumbnails */
+  padding: 0;
 }
 
 .album-tile h2 {
