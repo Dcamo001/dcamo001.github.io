@@ -1,0 +1,21 @@
+Why file:/// looks broken in Firefox
+-------------------------------------
+When you open index.html from the Desktop (file:///...), the browser loads that one file.
+Your page also needs styles/style.css, images/, logos/, and other .html files. Firefox often
+blocks or mishandles those extra "local file" requests — so you see no styling, broken images,
+duplicate mobile/desktop blocks (because the CSS that hides one of them never loads), and
+sometimes "Access to the file was denied" when you click a link to another page.
+
+That is normal browser behavior for file:// — it is not a bug in your reverted site files.
+
+How to preview locally (matches GitHub Pages)
+---------------------------------------------
+1. Double-click "Preview Site.command" in this folder.
+   OR in Terminal:  cd to this folder, then:  python3 -m http.server 8765
+2. Open:  http://127.0.0.1:8765/
+
+Use the live site for a final check:  https://www.camozzomedia.com/
+
+If you must use file://
+-----------------------
+Try Safari, or move the project to a path without spaces or apostrophes (e.g. ~/Sites/dcamo001.github.io).

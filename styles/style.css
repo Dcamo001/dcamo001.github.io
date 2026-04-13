@@ -143,6 +143,17 @@ table {
   text-align: center;
 }
 
+/* Third row: center Oregon under Japan (3-col); full-width row on 2-col */
+.album-oregon-montana {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1529px) {
+  .homepage-grid .album-oregon-montana {
+    grid-column: 2;
+  }
+}
+
 /* Skip link for accessibility */
 .skip-link {
   position: absolute;
@@ -319,8 +330,9 @@ li {
   .album-europe { order: 2; }
   .album-hawaii { order: 3; }
   .album-pretty-things { order: 4; }
-  .album-oregon-montana { order: 5; }
+  .album-japan { order: 5; }
   .album-north-cascades { order: 6; }
+  .album-oregon-montana { order: 7; }
 
   .homepage-grid .album-tile h2 {
     font-size: 16px;
