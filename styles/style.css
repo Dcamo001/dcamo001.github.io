@@ -173,11 +173,7 @@ table {
   text-align: center;
 }
 
-/* Third row: center Oregon under Japan (3-col); full-width row on 2-col */
-.album-oregon-montana {
-  grid-column: 1 / -1;
-}
-
+/* Third row: center Oregon only on 3-col desktop (same cell size as others on mobile) */
 @media (min-width: 1529px) {
   .homepage-grid .album-oregon-montana {
     grid-column: 2;
