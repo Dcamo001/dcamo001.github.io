@@ -373,7 +373,9 @@ li {
     column-count: 1;
   }
 
-  .mobileMenubar {
+  /* Outer bar only: inner <nav> must not also use class .mobileMenubar (Japan legacy) */
+  header.mobileMenubar,
+  div.mobileMenubar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,6 +388,17 @@ li {
     transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
+  }
+
+  /* Closed: hide menu panel (descendant nav so skip-link as first child cannot break match) */
+  .mobileMenubar:not(.active) nav.mobileMenubar-inner,
+  .mobileMenubar:not(.active) > nav {
+    display: none !important;
+  }
+
+  .mobileMenubar.active nav.mobileMenubar-inner,
+  .mobileMenubar.active > nav {
+    display: block !important;
   }
 
   .mobileMenubar ul,
@@ -414,8 +427,6 @@ li {
   }
 
   .mobileMenubar.active {
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 100%;
     height: auto;
@@ -428,6 +439,12 @@ li {
     transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
+  }
+
+  header.mobileMenubar.active,
+  div.mobileMenubar.active {
+    display: flex;
+    flex-direction: column;
   }
 
   .mobileMenubar a:not(.logo) {
