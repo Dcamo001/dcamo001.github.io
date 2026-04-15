@@ -9,22 +9,27 @@
     }
   }
 
+  function mobileMenuNav(menu) {
+    var inner = menu.querySelector("nav.mobileMenubar-inner");
+    if (inner) return inner;
+    var ch = menu.children;
+    for (var i = 0; i < ch.length; i++) {
+      if (ch[i].tagName === "NAV") return ch[i];
+    }
+    return null;
+  }
+
   ready(function () {
     document.querySelectorAll(".mobileMenubar").forEach(function (mobileMenu) {
       if (mobileMenu.tagName === "NAV") return;
       var toggle = mobileMenu.querySelector(".toggle-nav");
-      var nav =
-        mobileMenu.querySelector("nav.mobileMenubar-inner") ||
-        mobileMenu.querySelector(":scope > nav");
+      var nav = mobileMenuNav(mobileMenu);
       if (!toggle || !nav) return;
-
-      nav.hidden = !mobileMenu.classList.contains("active");
 
       toggle.addEventListener("click", function (e) {
         e.preventDefault();
         mobileMenu.classList.toggle("active");
         var open = mobileMenu.classList.contains("active");
-        nav.hidden = !open;
         if (toggle.hasAttribute("aria-expanded")) {
           toggle.setAttribute("aria-expanded", open ? "true" : "false");
         }

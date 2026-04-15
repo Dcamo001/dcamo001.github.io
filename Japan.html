@@ -74,9 +74,9 @@
   </head>
 
   <body>
-    <!-- navbar -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="mobileMenubar">
+    <header class="mobileMenubar" role="banner">
       <nav class="mobileMenubar-inner" aria-label="Main menu">
         <ul>
           <li><a href="./instagram.html">instagram</a></li>
@@ -88,8 +88,15 @@
       </nav>
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
       <h5 class="logotag">- PHOTO / VIDEO -</h5>
-      <a class="toggle-nav" href="#">&#9776;</a>
-    </div>
+      <button
+        type="button"
+        class="toggle-nav"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+    </header>
 
     <div class="desktopMenubar">
       <h1><a class="logo" href="./index.html"> DANNY CAMOZZO </a></h1>
@@ -102,12 +109,21 @@
           <li><a href="./about.html">contact/about</a></li>
           <li><a href="./prints.html">prints</a></li>
         </ul>
-        <a class="toggle-nav" href="#">&#9776;</a>
+        <button
+          type="button"
+          class="toggle-nav"
+          aria-label="Open menu"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          &#9776;
+        </button>
       </nav>
     </div>
 
     <!-- navbar -->
 
+    <main id="main-content">
     <h2 class="title" align="center">Tokyo and Kyoto</h2>
     <h3 class="title" align="center">Spring 2026</h3>
 
@@ -2799,6 +2815,8 @@
         </div>
       </div>
     </div>
+
+    </main>
 
     <br />
     <br />

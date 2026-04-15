@@ -263,7 +263,7 @@ a.logo.active {
 }
 
 .desktopMenubar ul,
-li {
+.desktopMenubar li {
   display: flex;
   margin: -52px 0px -20px 0px;
   font-size: 12px;
@@ -337,7 +337,7 @@ li {
   }
 }
 
-@media (max-width: 976px) {
+@media (max-width: 1024px) {
   #tableContainer {
     height: auto;
     width: auto;
@@ -382,7 +382,7 @@ li {
     position: relative;
     max-width: 100%;
     text-decoration: none;
-    margin: -66px 0 8px 0;
+    margin: 0 0 8px 0;
     color: black;
     font-size: 12px;
     transition: 0.3s all ease-in-out;
@@ -390,7 +390,7 @@ li {
     transition: 0.3s all ease-in-out;
   }
 
-  /* Closed: hide menu panel (descendant nav so skip-link as first child cannot break match) */
+  /* Closed: hide menu panel (match inner nav or direct child nav) */
   .mobileMenubar:not(.active) nav.mobileMenubar-inner,
   .mobileMenubar:not(.active) > nav {
     display: none !important;
